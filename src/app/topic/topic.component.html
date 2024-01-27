@@ -1,0 +1,12 @@
+<div class="hero w-full min-h-40 mt-6 bg-indigo-500">
+  <div class="hero-content w-full grid grid-cols-4 gap-4">
+    <img src="/assets/img/status/{{ status() }}" class="max-h-32 rounded-lg shadow-2xl"/>
+    <div>
+      <h1 class="text-5xl font-bold"><a routerLink="topics/{{ topic.id }}">{{ topic.title }}</a> </h1>
+      <p class="py-6">{{topic.subtitle}}</p>
+    </div>
+    <div>
+
+    </div>
+  </div>
+</div>

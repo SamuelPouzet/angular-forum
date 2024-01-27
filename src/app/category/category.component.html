@@ -1,0 +1,7 @@
+  <section *ngFor="let category of categories" class="">
+    <h2 class="text-5xl font-bold">{{ category.title }}</h2>
+        <article *ngFor="let topic of category.children">
+          <app-topic [topic]=topic></app-topic>
+        </article>
+    <div class="divider divider-primary"></div>
+  </section>
