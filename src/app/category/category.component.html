@@ -1,7 +1,9 @@
-  <section *ngFor="let category of categories" class="">
-    <h2 class="text-5xl font-bold">{{ category.title }}</h2>
-        <article *ngFor="let topic of category.children">
-          <app-topic [topic]=topic></app-topic>
-        </article>
-    <div class="divider divider-primary"></div>
-  </section>
+<div class="hero w-full min-h-40 mt-6 bg-indigo-500" *ngFor="let category of categories">
+  <div class="hero-content w-full grid grid-cols-4 gap-4">
+    <div>
+      <h1 class="text-5xl font-bold"><a routerLink="/topics/{{ category.id }}">{{ category.title }}</a></h1>
+      <p class="py-6">{{ category.subtitle }}</p>
+    </div>
+  </div>
+</div>
+

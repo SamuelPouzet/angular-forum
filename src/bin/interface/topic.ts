@@ -4,5 +4,4 @@ export interface Topic {
   status: number,
   title: string,
   subtitle: string,
-  children?: Topic[]
 }

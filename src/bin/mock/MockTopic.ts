@@ -2,13 +2,6 @@ import {Topic} from "../interface/topic";
 
 
 export const TOPICS: Topic[] = [
-  {
-    id:1,
-    category: 0,
-    status: 1,
-    title: 'administratif',
-    subtitle: 'tout ce que vous avez besoin de savoir',
-    children: [
       {
         id: 1,
         category: 1,
@@ -23,28 +16,19 @@ export const TOPICS: Topic[] = [
         title: 'l\'univers',
         subtitle: 'les règles à suivre pour vivre en société',
       },
-    ]
-  },
-  {
-    id:2,
-    category: 0,
-    status: 1,
-    title: 'zone de jeu',
-    subtitle: 'amusez vous',
-    children: [
       {
         id: 3,
-        category: 2,
+        category: 3,
         status: 1,
-        title: 'Sunnydale',
-        subtitle: 'là où tout à commencé',
+        title: 'Un nouveau départ',
+        subtitle: 'Une ville rasée',
       },
       {
         id: 4,
-        category: 2,
+        category: 3,
         status: 0,
-        title: 'Cardiff',
-        subtitle: 'la porte la plus active',
+        title: 'La reconstruction',
+        subtitle: 'Une nouvelle cité',
       },
       {
         id: 5,
@@ -53,8 +37,4 @@ export const TOPICS: Topic[] = [
         title: 'Autres lieux',
         subtitle: 'Parce que le Mal peut se montrer partout',
       },
-    ]
-  },
-
-
 ];

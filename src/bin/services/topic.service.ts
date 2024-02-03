@@ -11,8 +11,17 @@ export class TopicService {
   constructor() { }
 
   getTopics(): Observable<Topic[]> {
-    const topics = of(TOPICS);
-    return topics;
+    return  of(TOPICS);
+  }
+
+  getTopic(id: number): Observable<Topic> {
+    const topic = TOPICS.find(t => t.id === id)!;
+    return of(topic);
+  }
+
+  getTopicsByCategory(id: number): Observable<Topic[]> {
+    const topics = TOPICS.filter(t => t.category === id);
+    return of(topics);
   }
 
 }

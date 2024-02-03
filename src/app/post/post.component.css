@@ -1,0 +1,17 @@
+.posts-container {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-auto-rows: minmax(200px, auto);
+  grid-column-gap: 5px;
+
+  margin-bottom: 10px;
+}
+
+
+.post-user-container {
+
+}
+
+.post-content {
+
+}

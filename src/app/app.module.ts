@@ -14,6 +14,11 @@ import {TopicsComponent} from './topics/topics.component';
 import {LoginComponent} from './login/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { PostComponent } from './post/post.component';
+import { PostsComponent } from './posts/posts.component';
+import { PostsUserComponent } from './posts-user/posts-user.component';
+import { PostsContentComponent } from './posts-content/posts-content.component';
+import { SectionComponent } from './section/section.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import {HttpClientModule} from "@angular/common/http";
     CategoryComponent,
     TopicComponent,
     TopicsComponent,
-    LoginComponent
+    LoginComponent,
+    PostComponent,
+    PostsComponent,
+    PostsUserComponent,
+    PostsContentComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
