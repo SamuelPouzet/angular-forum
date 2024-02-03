@@ -19,6 +19,7 @@ import { PostsComponent } from './posts/posts.component';
 import { PostsUserComponent } from './posts-user/posts-user.component';
 import { PostsContentComponent } from './posts-content/posts-content.component';
 import { SectionComponent } from './section/section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SectionComponent } from './section/section.component';
     PostsComponent,
     PostsUserComponent,
     PostsContentComponent,
-    SectionComponent
+    SectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
